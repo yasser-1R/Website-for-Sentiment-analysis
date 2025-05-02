@@ -10,6 +10,10 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 # Import pre-processing functions from preprocessing.py
 from preprocessing import arabic_preprocessing, english_preprocessing
 
+# Helper function for sigmoid transform (used for SVC decision scores)
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+
 # ========== Mapping models ==========
 model_mappings = {
     "ASTD": {
@@ -87,7 +91,8 @@ arabic_translations = {
     "Sentiment Distribution": "توزيع المشاعر",
     "Negative Probability": "احتمالية السلبية",
     "Positive Probability": "احتمالية الإيجابية",
-    "Sentiment Analysis": "تحليل المشاعر"
+    "Sentiment Analysis": "تحليل المشاعر",
+    "Preprocessing resulted in empty text.": "أدت المعالجة المسبقة إلى نص فارغ."
 }
 
 # Function to translate based on language
@@ -276,7 +281,3 @@ if st.button(translate("Analyze Sentiment", current_language), key="analyze_butt
             import traceback
             with st.expander("Error Details"):
                 st.code(traceback.format_exc(), language="python")
-
-# Helper function for sigmoid transform (used for SVC decision scores)
-def sigmoid(x):
-    return 1 / (1 + np.exp(-x))
