@@ -28,8 +28,17 @@ def remove_non_arabic(text):
     return ''
 
 def remove_arabic_stopwords(tokens):
+    # Load default stopwords
     arabic_stopwords = set(stopwords.words("arabic"))
-    return [token for token in tokens if token not in arabic_stopwords]
+
+    # List of important negation words to keep
+    negations_to_keep = {"ما", "لا", "ليس", "لم", "لن", "بدون", "غير", "مو", "مش"}
+
+    # Remove negations from the stopword list
+    custom_stopwords = arabic_stopwords - negations_to_keep
+
+    # Return tokens that are not in the (filtered) stopwords list
+    return [token for token in tokens if token not in custom_stopwords]
 
 def get_root_ar(word, stemmer):
     if isinstance(word, str):

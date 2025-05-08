@@ -16,7 +16,7 @@ def sigmoid(x):
 
 # ========== Mapping models ==========
 model_mappings = {
-    "ASTD": {
+    "Arabic Tweets": {  # Changed from ASTD
         "folder": "ASTD_Models",
         "vectorizer": "tfidf_vectorizer_ASTD_Pre_Blc.pkl",
         "preprocessing": arabic_preprocessing,
@@ -30,7 +30,7 @@ model_mappings = {
             "AdaBoost": "AdaBoostClassifier_ASTD_Preprocessed_Balanced_best.pkl"
         }
     },
-    "LABR": {
+    "Arabic Reviews": {  # Changed from LABR
         "folder": "LABR_Models",
         "vectorizer": "tfidf_vectorizer_LABR_Pre_Blc.pkl",
         "preprocessing": arabic_preprocessing,
@@ -44,7 +44,7 @@ model_mappings = {
             "AdaBoost": "AdaBoostClassifier_LABR_Preprocessed_Balanced_best.pkl"
         }
     },
-    "IMDB": {
+    "English Reviews": {  # Changed from IMDB
         "folder": "IMDB_Models",
         "vectorizer": "tfidf_vectorizer_IMDB_Pre.pkl",
         "preprocessing": english_preprocessing,
@@ -58,7 +58,7 @@ model_mappings = {
             "AdaBoost": "AdaBoostClassifier_IMDB_Preprocessed_best.pkl"
         }
     },
-    "TESA": {
+    "English Tweets": {  # Changed from TESA
         "folder": "TESA_Models",
         "vectorizer": "tfidf_vectorizer_TESA_Pre.pkl",
         "preprocessing": english_preprocessing,
@@ -135,27 +135,91 @@ selected_model_name = st.sidebar.selectbox(
 # Update session state
 st.session_state.selected_dataset = current_dataset
 
-# ========== Apply dark theme CSS ==========
+# ========== Apply new color theme CSS ==========
 st.markdown("""
     <style>
-    .prediction-positive {
-        background-color: #0d3818;
-        color: #4ade80;
-        padding: 10px;
-        border-radius: 5px;
-        font-size: 16px;
-        margin-top: 10px;
+    /* New color theme */
+    .stApp {
+        background-color: #213448;
+        color: #ECEFCA;
     }
-    .prediction-negative {
-        background-color: #3c1618;
-        color: #f87171;
-        padding: 10px;
-        border-radius: 5px;
-        font-size: 16px;
-        margin-top: 10px;
+    
+    /* Sidebar styling */
+    .css-1d391kg, .css-1v3fvcr {
+        background-color: #213448;
     }
+    
+    /* Headers */
+    h1, h2, h3, h4, h5, h6 {
+        color: #94B4C1 !important;
+    }
+    
+    /* Text area and input fields */
+    .stTextArea textarea, .stTextInput input {
+        background-color: #547792;
+        color: #ECEFCA;
+        border: 1px solid #94B4C1;
+    }
+    
+    /* Button styling */
+    .stButton > button {
+        background-color: #547792;
+        color: #ECEFCA;
+        border: none;
+    }
+    
+    .stButton > button:hover {
+        background-color: #94B4C1;
+        color: #213448;
+    }
+    
+    /* Progress bar */
     .stProgress > div > div {
-        background-color: #4F8BF9;
+        background-color: #94B4C1 !important;
+    }
+    
+    /* Code blocks */
+    .stCode {
+        background-color: #547792;
+        border: 1px solid #94B4C1;
+        color: #ECEFCA;
+    }
+    
+    /* Prediction result boxes */
+    .prediction-positive {
+        background-color: #547792;
+        color: #ECEFCA;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 16px;
+        margin-top: 15px;
+        border-left: 4px solid #94B4C1;
+    }
+    
+    .prediction-negative {
+        background-color: #213448;
+        color: #ECEFCA;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 16px;
+        margin-top: 15px;
+        border-left: 4px solid #547792;
+    }
+    
+    /* Select boxes */
+    .stSelectbox > div > div {
+        background-color: #547792;
+        color: #ECEFCA;
+    }
+    
+    /* Hover effects for interactive elements */
+    .stSelectbox:hover > div {
+        border-color: #94B4C1;
+    }
+    
+    /* Small text */
+    small {
+        color: #ECEFCA;
     }
     </style>
     """, unsafe_allow_html=True)
