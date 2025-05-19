@@ -84,49 +84,69 @@ model_mappings = {
 }
 
 # Arabic translations
-arabic_translations = {
-    "Select Dataset": "اختر مجموعة البيانات",
-    "Select Model Algorithm": "اختر خوارزمية النموذج",
-    "Enter text for sentiment analysis:": "أدخل النص للتحليل العاطفي:",
-    "Type or paste text here...": "اكتب أو الصق النص هنا...",
-    "Analyze Sentiment": "تحليل المشاعر",
-    "Please enter some text.": "الرجاء إدخال بعض النص.",
-    "Processing text...": "معالجة النص...",
-    "Preprocessed Text:": "النص المعالج:",
-    "Predicted Sentiment:": "المشاعر المتوقعة:",
-    "Positive": "إيجابي",
-    "Negative": "سلبي",
-    "Confidence": "الثقة",
-    "Sentiment Distribution": "توزيع المشاعر",
-    "Negative Probability": "احتمالية السلبية",
-    "Positive Probability": "احتمالية الإيجابية",
-    "Sentiment Analysis": "تحليل المشاعر",
-    "Preprocessing resulted in empty text.": "أدت المعالجة المسبقة إلى نص فارغ.",
-    "Text Analysis": "تحليل النص",
-    "File Analysis": "تحليل الملف",
-    "Upload CSV File": "تحميل ملف CSV",
-    "Please upload a CSV file": "يرجى تحميل ملف CSV",
-    "Processing file...": "معالجة الملف...",
-    "File processed successfully!": "تمت معالجة الملف بنجاح!",
-    "Download Results": "تنزيل النتائج",
-    "Results Summary": "ملخص النتائج",
-    "Total Texts": "إجمالي النصوص",
-    "Positive Texts": "النصوص الإيجابية",
-    "Negative Texts": "النصوص السلبية",
-    "Positive Percentage": "النسبة المئوية الإيجابية",
-    "Negative Percentage": "النسبة المئوية السلبية",
-    "Error processing file": "خطأ في معالجة الملف",
-    "Preview of Processed Data": "معاينة البيانات المعالجة",
-    "Select Column": "اختر العمود",
-    "Home": "الرئيسية",
-    "Welcome to Sentiment Analysis Tool": "مرحبًا بك في أداة تحليل المشاعر",
-    "This tool helps you analyze sentiment in text data.": "تساعدك هذه الأداة على تحليل المشاعر في بيانات النص."
+translations = {
+    "Arabic": {
+        "Select Dataset": "اختر مجموعة البيانات",
+        "Select Model Algorithm": "اختر خوارزمية النموذج",
+        "Enter text for sentiment analysis:": "أدخل النص للتحليل العاطفي:",
+        "Type or paste text here...": "اكتب أو الصق النص هنا...",
+        "Analyze Sentiment": "تحليل المشاعر",
+        "Please enter some text.": "الرجاء إدخال بعض النص.",
+        "Processing text...": "معالجة النص...",
+        "Preprocessed Text:": "النص المعالج:",
+        "Predicted Sentiment:": "المشاعر المتوقعة:",
+        "Positive": "إيجابي",
+        "Negative": "سلبي",
+        "Confidence": "الثقة",
+        "Sentiment Distribution": "توزيع المشاعر",
+        "Negative Probability": "احتمالية السلبية",
+        "Positive Probability": "احتمالية الإيجابية",
+        "Sentiment Analysis": "تحليل المشاعر",
+        "Preprocessing resulted in empty text.": "أدت المعالجة المسبقة إلى نص فارغ.",
+        "Text Analysis": "تحليل النص",
+        "File Analysis": "تحليل الملف",
+        "Upload CSV File": "تحميل ملف CSV",
+        "Please upload a CSV file": "يرجى تحميل ملف CSV",
+        "Processing file...": "معالجة الملف...",
+        "File processed successfully!": "تمت معالجة الملف بنجاح!",
+        "Download Results": "تنزيل النتائج",
+        "Results Summary": "ملخص النتائج",
+        "Total Texts": "إجمالي النصوص",
+        "Positive Texts": "النصوص الإيجابية",
+        "Negative Texts": "النصوص السلبية",
+        "Positive Percentage": "النسبة المئوية الإيجابية",
+        "Negative Percentage": "النسبة المئوية السلبية",
+        "Error processing file": "خطأ في معالجة الملف",
+        "Preview of Processed Data": "معاينة البيانات المعالجة",
+        "Select Column": "اختر العمود",
+        "Home": "الرئيسية",
+        "Welcome to Sentiment Analysis Tool": "مرحبًا بك في أداة تحليل المشاعر",
+        "This tool helps you analyze sentiment in text data.": "تساعدك هذه الأداة على تحليل المشاعر في بيانات النص.",
+        "Language": "اللغة",
+        "English": "الإنجليزية",
+        "Arabic": "العربية",
+        "Switch to English": "تبديل إلى الإنجليزية",
+        "Switch to Arabic": "تبديل إلى العربية",
+        "Features:": "الميزات:",
+        "Analyze sentiment in single texts": "تحليل المشاعر في النصوص الفردية",
+        "Process entire CSV files": "معالجة ملفات CSV بالكامل",
+        "Support for both Arabic and English text": "دعم للنص العربي والإنجليزي",
+        "Multiple machine learning algorithms": "خوارزميات متعددة للتعلم الآلي",
+        "How to Use:": "كيفية الاستخدام:",
+        "Select Text Analysis or File Analysis from the sidebar": "اختر \"تحليل النص\" أو \"تحليل الملف\" من الشريط الجانبي",
+        "Choose a dataset model (Arabic/English, Tweets/Reviews)": "اختر نموذج مجموعة البيانات (عربي/إنجليزي، تغريدات/مراجعات)",
+        "Select a machine learning algorithm": "اختر خوارزمية التعلم الآلي",
+        "Enter text or upload a CSV file for analysis": "أدخل نصًا أو قم بتحميل ملف CSV للتحليل"
+    },
+    "English": {
+        # English translations are the keys themselves
+    }
 }
 
 # Function to translate based on language
 def translate(text, language):
     if language == "Arabic":
-        return arabic_translations.get(text, text)
+        return translations["Arabic"].get(text, text)
     return text
 
 # ========== Page Configuration ==========
@@ -139,41 +159,66 @@ st.set_page_config(
 # ========== Initialize session state ==========
 if 'selected_dataset' not in st.session_state:
     st.session_state.selected_dataset = list(model_mappings.keys())[0]
+if 'selected_model' not in st.session_state:
+    st.session_state.selected_model = list(model_mappings[st.session_state.selected_dataset]["models"].keys())[0]
 if 'page' not in st.session_state:
     st.session_state.page = "Home"
+if 'interface_language' not in st.session_state:
+    st.session_state.interface_language = "English"
 
 # ========== Sidebar Navigation ==========
 st.sidebar.title("Sentiment Analysis")
 
+# Language toggle button
+current_language = st.session_state.interface_language
+if current_language == "English":
+    toggle_language = "Arabic"
+    toggle_text = "Switch to Arabic"
+else:
+    toggle_language = "English"
+    toggle_text = "Switch to English"
+
+if st.sidebar.button(translate(toggle_text, current_language)):
+    st.session_state.interface_language = toggle_language
+    st.rerun()
+
+st.sidebar.markdown("---")
+
 # Navigation buttons
-if st.sidebar.button("Home"):
+if st.sidebar.button(translate("Home", current_language)):
     st.session_state.page = "Home"
-if st.sidebar.button("Text Analysis"):
+if st.sidebar.button(translate("Text Analysis", current_language)):
     st.session_state.page = "Text Analysis"
-if st.sidebar.button("File Analysis"):
+if st.sidebar.button(translate("File Analysis", current_language)):
     st.session_state.page = "File Analysis"
 
-# Get current language
-current_dataset = st.session_state.selected_dataset
-current_language = model_mappings[current_dataset]["language"]
-
-# Dataset selection (shared between Text and File Analysis)
+# Dataset and model selection (shared between Text and File Analysis)
 if st.session_state.page in ["Text Analysis", "File Analysis"]:
     st.sidebar.markdown("---")
+    
+    # Dataset selection
     selected_dataset = st.sidebar.selectbox(
         translate("Select Dataset", current_language),
-        list(model_mappings.keys())
+        list(model_mappings.keys()),
+        index=list(model_mappings.keys()).index(st.session_state.selected_dataset)
     )
+    
+    # Update dataset in session state if changed
+    if selected_dataset != st.session_state.selected_dataset:
+        st.session_state.selected_dataset = selected_dataset
+        # Reset model selection when dataset changes to prevent mismatching
+        st.session_state.selected_model = list(model_mappings[selected_dataset]["models"].keys())[0]
     
     # Model selection
     selected_model_name = st.sidebar.selectbox(
         translate("Select Model Algorithm", current_language),
-        list(model_mappings[selected_dataset]["models"].keys())
+        list(model_mappings[selected_dataset]["models"].keys()),
+        index=list(model_mappings[selected_dataset]["models"].keys()).index(st.session_state.selected_model)
     )
     
-    # Update session state
-    st.session_state.selected_dataset = selected_dataset
-    current_language = model_mappings[selected_dataset]["language"]
+    # Update model in session state
+    if selected_model_name != st.session_state.selected_model:
+        st.session_state.selected_model = selected_model_name
     
     # Load vectorizer and model
     try:
@@ -202,19 +247,17 @@ if st.session_state.page == "Home":
     st.markdown(translate("This tool helps you analyze sentiment in text data.", current_language))
     
     # Add more information about the tool
-    st.markdown("""
-    ### Features:
-    - Analyze sentiment in single texts
-    - Process entire CSV files
-    - Support for both Arabic and English text
-    - Multiple machine learning algorithms
+    st.markdown(f"### {translate('Features:', current_language)}")
+    st.markdown(f"- {translate('Analyze sentiment in single texts', current_language)}")
+    st.markdown(f"- {translate('Process entire CSV files', current_language)}")
+    st.markdown(f"- {translate('Support for both Arabic and English text', current_language)}")
+    st.markdown(f"- {translate('Multiple machine learning algorithms', current_language)}")
     
-    ### How to Use:
-    1. Select "Text Analysis" or "File Analysis" from the sidebar
-    2. Choose a dataset model (Arabic/English, Tweets/Reviews)
-    3. Select a machine learning algorithm
-    4. Enter text or upload a CSV file for analysis
-    """)
+    st.markdown(f"### {translate('How to Use:', current_language)}")
+    st.markdown(f"1. {translate('Select Text Analysis or File Analysis from the sidebar', current_language)}")
+    st.markdown(f"2. {translate('Choose a dataset model (Arabic/English, Tweets/Reviews)', current_language)}")
+    st.markdown(f"3. {translate('Select a machine learning algorithm', current_language)}")
+    st.markdown(f"4. {translate('Enter text or upload a CSV file for analysis', current_language)}")
 
 # Text Analysis Page
 elif st.session_state.page == "Text Analysis":
