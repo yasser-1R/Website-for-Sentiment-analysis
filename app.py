@@ -136,7 +136,8 @@ translations = {
         "Select Text Analysis or File Analysis from the sidebar": "اختر \"تحليل النص\" أو \"تحليل الملف\" من الشريط الجانبي",
         "Choose a dataset model (Arabic/English, Tweets/Reviews)": "اختر نموذج مجموعة البيانات (عربي/إنجليزي، تغريدات/مراجعات)",
         "Select a machine learning algorithm": "اختر خوارزمية التعلم الآلي",
-        "Enter text or upload a CSV file for analysis": "أدخل نصًا أو قم بتحميل ملف CSV للتحليل"
+        "Enter text or upload a CSV file for analysis": "أدخل نصًا أو قم بتحميل ملف CSV للتحليل",
+        "À propos": "حول"
     },
     "English": {
         # English translations are the keys themselves
@@ -187,6 +188,8 @@ st.sidebar.markdown("---")
 # Navigation buttons
 if st.sidebar.button(translate("Home", current_language)):
     st.session_state.page = "Home"
+if st.sidebar.button(translate("À propos", current_language)):
+    st.session_state.page = "À propos"
 if st.sidebar.button(translate("Text Analysis", current_language)):
     st.session_state.page = "Text Analysis"
 if st.sidebar.button(translate("File Analysis", current_language)):
@@ -258,6 +261,46 @@ if st.session_state.page == "Home":
     st.markdown(f"2. {translate('Choose a dataset model (Arabic/English, Tweets/Reviews)', current_language)}")
     st.markdown(f"3. {translate('Select a machine learning algorithm', current_language)}")
     st.markdown(f"4. {translate('Enter text or upload a CSV file for analysis', current_language)}")
+
+# À propos Page
+elif st.session_state.page == "À propos":
+    st.title("À propos")
+    
+    st.markdown("Bienvenue sur cette application d'analyse des sentiments !")
+    
+    st.markdown("""
+    Je suis **Rochdi Yasser**, étudiant à l'Université Chouaib Doukkali (Faculté des Sciences d'El Jadida), 
+    et j'ai développé cette application dans le cadre de mon mémoire de fin d'études, sous la supervision de **Pr. Hanane El Faik**.
+    """)
+    
+    st.markdown("""
+    Cette plateforme permet d'analyser automatiquement les sentiments exprimés dans des textes en **arabe** et en **anglais**, 
+    en utilisant des techniques d'**apprentissage automatique**. Les modèles intégrés ici ont été entraînés pour distinguer 
+    les sentiments **positifs** et **négatifs**, en se basant sur quatre jeux de données variés :
+    """)
+    
+    st.markdown("""
+    * **ASTD** – *Arabic Sentiment Tweets Dataset*
+    * **IMDB** – *Internet Movie Database Movie Reviews*
+    * **LABR** – *Large-Scale Arabic Book Reviews*
+    * **TESA** – *Twitter Entity Sentiment Analysis*
+    """)
+    
+    st.markdown("""
+    Tout au long de ce projet, j'ai exploré plusieurs étapes clés :
+    * Le prétraitement des textes
+    * La vectorisation
+    * L'optimisation des hyperparamètres
+    * L'équilibrage des classes
+    * Et la comparaison de six algorithmes de classification
+    """)
+    
+    st.markdown("""
+    Cette application, conçue avec **Streamlit**, vous permet de tester vous-même les modèles développés 
+    et d'observer leur comportement en temps réel.
+    """)
+    
+    st.markdown("**Merci de votre visite, et bonne exploration !**")
 
 # Text Analysis Page
 elif st.session_state.page == "Text Analysis":
